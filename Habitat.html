@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+  @font-face{
+  	font-family: 'yugsly';
+  	src: url('Fonts/yugsly-webfont.eot');
+  	src: url('Fonts/yugsly-webfont.eot?#iefix') format('embedded-opentype'),
+  	     url('Fonts/yugsly-webfont.woff') format('woff'),
+  	     url('Fonts/yugsly-webfont.ttf') format('truetype'),
+  	     url('Fonts/yugsly-webfont.svg#webfont') format('svg');
+  }
+
+  /* Colors */
+  .quote {color: #ff8c1a}
+  .sinister {color: #ff0000}
+  .dramatic {color: #ffffff}
+  .title {color: #36ff00; font-size:calc(20px + 6vw)}
+  .subtitle {color: #004eff; font-size:calc(16px + 5vw)}
+
+  .bold {font-weight: bold;}
+  .italic {font-style: italic;}
+  .big {font-size: 30px;}
+
+  .silly {font-family: 'yugsly', Arial, sans-serif}
+
+  body {
+      background-image: url('Images/Stars.png');
+      background-repeat: repeat;
+  }
+  h1 {
+      text-align: center;
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  p {
+      margin-top: auto;
+      margin-bottom: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      font-size:calc(14px + 1vw);
+      color: #00f6ff;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  div {
+    position: relative;
+  }
+  div.a {
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari 3-8 */
+    transform: rotate(-20deg);
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+  }
+
+  /* Create three unequal columns that floats next to each other */
+  .columnPrimary {
+      vertical-align: middle;
+      float: left;
+      width: 70%;
+  }
+
+  .columnSecondary {
+      vertical-align: middle;
+      float: left;
+      width: 30%;
+  }
+
+  .columnSmallW {
+      vertical-align: middle;
+      float: left;
+      width: 15%;
+  }
+
+  .columnLargeW {
+      vertical-align: middle;
+      float: left;
+      width: 70%;
+  }
+
+  .column {
+      vertical-align: middle;
+      float: left;
+  }
+
+  .leftW, .rightW {
+    width: 15%;
+  }
+  .middleW {
+    width: 70%
+  }
+
+  .third {
+    width: 33.33%
+  }
+
+  .columnHalf {
+    vertical-align: middle;
+    float: left;
+    width: 50%;
+  }
+
+  .columnQuarter {
+    vertical-align: middle;
+    float: left;
+    width: 25%;
+  }
+
+  .row {
+    padding-bottom: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  @-webkit-keyframes rotateAround {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes rotateAround {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes rotateAround {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes rotateAround {
+    0%   { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(-20deg); }
+  }
+  #rotater {
+  -webkit-animation: rotateAround 5s infinite; /* Safari 4+ */
+  -moz-animation:    rotateAround 5s infinite; /* Fx 5+ */
+  -o-animation:      rotateAround 5s infinite; /* Opera 12+ */
+  animation:         rotateAround 5s infinite; /* IE 10+, Fx 29+ */
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other 
+  @media screen and (max-width: 400px) {
+    .columnPrimary, .columnSecondary, .columnQuarter, .columnHalf {
+        width: 100%;
+    }
+  }
+  */
+
+
+</style>
+</head>
+<body>
+
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+  <h1 class = "title bold massive">
+    SMILE FOR ME
+  </h1>
+  <h1 class = "subtitle bold massive">
+    THE OFFICIAL HABITAT HOMEPAGE
+  </h1>
+
+  <p>
+    <img src="Images/ByMe.png" alt="Me!" title="Me!" width = "300">
+  </p>
+
+  <p class="italic bold dramatic">"For all of you're happiness need's!""</p>
+
+
+<!--SECTION 1 - Intro 1-->
+  <div class="row">
+      <div class="columnPrimary">
+        <p>
+        Oh hi! I did'nt seeyou there! I am Dr. Habit and welcome to my website!
+        Hosted on the <span class="quote">World Wide Web : - )</span>
+        I am just a friendly guy who love's Smiles more than ANYTHING!
+        I decided that there are were too many frownies : - ( in the world and
+        so I wanted to do something about it's!
+        <br>
+        <br>
+        <span class="quote">"What Did You Do?"</span> I hear you ask? But the <span class="quote">"You"</span> in your question is actually
+        ME? DR HABIT?
+        <br>
+        <br>
+        I will tell you what I did!!
+        </p>
+      </div>
+
+      <div class="columnSecondary">
+        <img src="Images/HabitWave.gif" alt="Me!" title="Me!" align = "center">
+      </div>
+  </div>
+
+
+<!--SECTION 1 - Intro 2-->
+  <div class="row">
+      <div class="columnSecondary">
+          <img src="Images/HabitCheer.gif" alt="Me!" align = "center" class = "fill">
+      </div>
+
+      <div class="columnPrimary">
+        <p>
+        FOr many several years, <span class = "bold italic">Martha</span> and I have been creatingb a place for poeple who
+        just do not have a smile : - (<br>
+        Any one who is sad can just come-on-over and join! You stay while u are sad,
+        and you'are allowed to leave when you have gotten bacj your smile!
+        <br> <br>
+        <span class="quote">"Oh No But What If I Cannot Get Back My Smile?"</span>
+        <br><br>
+        Do'nt worry silly-head! If you just Can't Find Your Happiness, there's still
+        <span class = sinister>The Big Event</span>!! <span class = "bold italic">Martha</span> has been peparing really hard to make sure that all
+        everyone will b laughing and having a good time! Satisfaction guaranteed!
+        </p>
+      </div>
+  </div>
+
+  <p>
+    <img src="Images/Stuffin/love2.gif" alt="Me!">
+    <img src="Images/Stuffin/cool.gif" alt="Me!">
+    <img src="Images/Stuffin/love2.gif" alt="Me!">
+  </p>
+
+<!--SECTION 1 - Prelude-->
+  <div class="row">
+    <div class="columnQuarter"><br></div>
+    <div class="columnHalf">
+    <p>
+    I can hear you saying!:
+    <br> <br>
+    <span class = "big bold quote">"Well What Is The Name Of This Magical Place Where I Can Learn How To Be Happy?"</span>
+    <br><br>
+    sTOP ASKING ME QUESTIONS!!
+    <br><br>
+    BUT we call it.....
+    </p>
+
+    </div>
+    <div class="columnQuarter"></div>
+  </div>
+
+<!--SECTION 2-->
+  <img src="Images/HabitatTitle.png" alt="Me!" class="center" class = "fill">
+
+
+  <div class="row">
+      <div class="columnPrimary">
+        <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+      </div>
+
+      <div class="columnSecondary">
+        <div class="row">
+          <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+        </div>
+        <div class="row">
+          <p>
+            The Habitat is an amazing New resort wear you can go to learn how to smile again!
+            <br><br>
+            The Habitat is chock-full of the things 2 do! Play carnival games, relax in hte sun,
+            or even get a drink at the exclusive Lounge!
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="columnSecondary">
+        <div class="row">
+          <p>
+            Spend some time with Me, <span class = "bold">Martha</span>, and all the othr sad folksies,
+            and soon you're will be using those Teeth for grinnin!
+            <br><br>
+            DO you're part in making the world a smiley-ier place!
+          </p>
+        </div>
+        <div class="row">
+          <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+        </div>
+      </div>
+
+      <div class="columnPrimary">
+        <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+      </div>
+  </div>
+
+
+
+
+<!--SECTION 3-->
+  <div class="row">
+      <div class="columnPrimary">
+        <p>
+        I hear you saying <span class="quote">"Docr. Habit,, I'm simply Not convinced!!!
+        Is the Habitatat really the place for ME?? "</span>
+        Good question! THe Habitat is the place for ANYONe who has A frown in there pocket
+        when they could be usin those teeth 2 smile! Here are our Princilpes::
+        </p>
+      </div>
+
+      <div class="columnSecondary">
+        <img src="Images/HabitCheer.gif" alt="Me!" align = "center" class = "fill">
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="columnSmallW"><br></div>
+    <div class="columnLargeW">
+      <div id="rotater">
+        <img src="Images/TheRules.png" alt="Me!" align = "center" class = "fill">
+      </div>
+    </div>
+    <div class="columnSmallW"></div>
+  </div>
+
+  <div class="row">
+    <div class="column left"></div>
+    <div class="column middle">
+
+      <div class="column primary">
+      </div>
+
+      <div class="column secondary">
+      </div>
+
+    </div>
+    <div class="column right"></div>
+  </div>
+
+</body>
+</html>
