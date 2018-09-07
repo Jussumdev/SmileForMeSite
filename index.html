@@ -124,6 +124,14 @@
     padding-bottom: 20px;
   }
 
+  .center-vid {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
   /* Clear floats after the columns */
   .row:after {
       content: "";
@@ -154,7 +162,7 @@
   animation:         rotateAround 5s infinite; /* IE 10+, Fx 29+ */
   }
 
-  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other 
+  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other
   @media screen and (max-width: 400px) {
     .columnPrimary, .columnSecondary, .columnQuarter, .columnHalf {
         width: 100%;
@@ -325,6 +333,12 @@
       </div>
     </div>
     <div class="columnSmallW"></div>
+  </div>
+
+  <div class="row">
+    <div class="center-vid">
+      <iframe src="https://www.youtube.com/embed/QH2-TGUlwu4?autoplay=1&showinfo=0&rel=0&fs=0&color=white&disablekb=1" width="560" height="315" frameborder="0"></iframe>
+    </div>
   </div>
 
   <div class="row">
