@@ -1,185 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-* {
-    box-sizing: border-box;
-}
 
-  @font-face{
-  	font-family: 'yugsly';
-  	src: url('Fonts/yugsly-webfont.eot');
-  	src: url('Fonts/yugsly-webfont.eot?#iefix') format('embedded-opentype'),
-  	     url('Fonts/yugsly-webfont.woff') format('woff'),
-  	     url('Fonts/yugsly-webfont.ttf') format('truetype'),
-  	     url('Fonts/yugsly-webfont.svg#webfont') format('svg');
-  }
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
-  /* Colors */
-  .quote {color: #ff8c1a}
-  .sinister {color: #ff0000}
-  .dramatic {color: #ffffff}
-  .title {color: #36ff00; font-size:calc(20px + 6vw)}
-  .subtitle {color: #004eff; font-size:calc(16px + 5vw)}
-
-  .bold {font-weight: bold;}
-  .italic {font-style: italic;}
-  .big {font-size: 30px;}
-
-  .silly {font-family: 'yugsly', Arial, sans-serif}
-
-  body {
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,120,120,0.2)), url('Images/Stars.png');
-      background-repeat: repeat;
-  }
-  h1 {
-      text-align: center;
-      font-size: 50px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-  }
-  p {
-      margin-top: auto;
-      margin-bottom: auto;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-align: center;
-      font-size:calc(14px + 1vw);
-      color: #00f6ff;
-  }
-  img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  div {
-    position: relative;
-  }
-  div.a {
-    -ms-transform: rotate(-20deg); /* IE 9 */
-    -webkit-transform: rotate(-20deg); /* Safari 3-8 */
-    transform: rotate(-20deg);
-  }
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 96%;
-  }
-
-  /* Create three unequal columns that floats next to each other */
-  .columnPrimary {
-      vertical-align: middle;
-      float: left;
-      width: 70%;
-  }
-
-  .columnSecondary {
-      vertical-align: middle;
-      float: left;
-      width: 30%;
-  }
-
-  .columnSmallW {
-      vertical-align: middle;
-      float: left;
-      width: 15%;
-  }
-
-  .columnLargeW {
-      vertical-align: middle;
-      float: left;
-      width: 70%;
-  }
-
-  .column {
-      vertical-align: middle;
-      float: left;
-  }
-
-  .leftW, .rightW {
-    width: 15%;
-  }
-
-  .middleW {
-    width: 70%
-  }
-
-  .columnThird {
-    vertical-align: middle;
-    float: left;
-    width: 33.33%;
-  }
-
-  .columnHalf {
-    vertical-align: middle;
-    float: left;
-    width: 50%;
-  }
-
-  .columnQuarter {
-    vertical-align: middle;
-    float: left;
-    width: 25%;
-  }
-
-  .row {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .center-vid {
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-  @-webkit-keyframes rotateAround {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-moz-keyframes rotateAround {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-o-keyframes rotateAround {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes rotateAround {
-    0%   { transform: rotate(-20deg); }
-    50% { transform: rotate(20deg); }
-    100% { transform: rotate(-20deg); }
-  }
-  #rotater {
-  -webkit-animation: rotateAround 5s infinite; /* Safari 4+ */
-  -moz-animation:    rotateAround 5s infinite; /* Fx 5+ */
-  -o-animation:      rotateAround 5s infinite; /* Opera 12+ */
-  animation:         rotateAround 5s infinite; /* IE 10+, Fx 29+ */
-  }
-
-  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other
-  @media screen and (max-width: 400px) {
-    .columnPrimary, .columnSecondary, .columnQuarter, .columnHalf {
-        width: 100%;
+  <style>
+    * {
+      box-sizing: border-box;
     }
-  }
-  */
+
+    @font-face{
+    	font-family: 'yugsly';
+    	src: url('Fonts/yugsly-webfont.eot');
+    	src: url('Fonts/yugsly-webfont.eot?#iefix') format('embedded-opentype'),
+    	     url('Fonts/yugsly-webfont.woff') format('woff'),
+    	     url('Fonts/yugsly-webfont.ttf') format('truetype'),
+    	     url('Fonts/yugsly-webfont.svg#webfont') format('svg');
+    }
+
+    /* Colors */
+    .quote {color: #ff8c1a}
+    .sinister {color: #ff0000}
+    .dramatic {color: #ffffff}
+    .title {color: #36ff00; font-size:calc(20px + 6vw)}
+    .subtitle {color: #004eff; font-size:calc(16px + 5vw)}
+
+    .bold {font-weight: bold;}
+    .italic {font-style: italic;}
+    .big {font-size: 30px;}
+
+    .silly {font-family: 'yugsly', Arial, sans-serif}
+
+    body {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,120,120,0.2)), url('Images/Stars.png');
+        background-repeat: repeat;
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    p {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size:calc(14px + 1vw);
+        color: #00f6ff;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    div {
+      position: relative;
+    }
+    div.a {
+      -ms-transform: rotate(-20deg); /* IE 9 */
+      -webkit-transform: rotate(-20deg); /* Safari 3-8 */
+      transform: rotate(-20deg);
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 96%;
+    }
+
+    /* Create three unequal columns that floats next to each other */
+    .columnPrimary {
+        vertical-align: middle;
+        float: left;
+        width: 70%;
+    }
+
+    .columnSecondary {
+        vertical-align: middle;
+        float: left;
+        width: 30%;
+    }
+
+    .columnSmallW {
+        vertical-align: middle;
+        float: left;
+        width: 15%;
+    }
+
+    .columnLargeW {
+        vertical-align: middle;
+        float: left;
+        width: 70%;
+    }
+
+    .column {
+        vertical-align: middle;
+        float: left;
+    }
+
+    .leftW, .rightW {
+      width: 15%;
+    }
+
+    .middleW {
+      width: 70%
+    }
+
+    .columnThird {
+      vertical-align: middle;
+      float: left;
+      width: 33.33%;
+    }
+
+    .columnHalf {
+      vertical-align: middle;
+      float: left;
+      width: 50%;
+    }
+
+    .columnQuarter {
+      vertical-align: middle;
+      float: left;
+      width: 25%;
+    }
+
+    .row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .center-vid {
+      position: absolute;
+      margin: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @-webkit-keyframes rotateAround {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @-moz-keyframes rotateAround {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @-o-keyframes rotateAround {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes rotateAround {
+      0%   { transform: rotate(-20deg); }
+      50% { transform: rotate(20deg); }
+      100% { transform: rotate(-20deg); }
+    }
+    #rotater {
+    -webkit-animation: rotateAround 5s infinite; /* Safari 4+ */
+    -moz-animation:    rotateAround 5s infinite; /* Fx 5+ */
+    -o-animation:      rotateAround 5s infinite; /* Opera 12+ */
+    animation:         rotateAround 5s infinite; /* IE 10+, Fx 29+ */
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other
+    @media screen and (max-width: 400px) {
+      .columnPrimary, .columnSecondary, .columnQuarter, .columnHalf {
+          width: 100%;
+      }
+    }
+    */
 
 
-</style>
+  </style>
 </head>
 <body>
 
   <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+
 
   <h1 class = "title bold massive">
     SMILE FOR ME
@@ -223,7 +228,7 @@
 <!--SECTION 1 - Intro 2-->
   <div class="row">
       <div class="columnSecondary">
-          <img src="Images/HabitCheer.gif" alt="Me!" align = "center" class = "fill">
+          <img src="Images/HabitSign.gif" alt="Me!" align = "center" class = "fill">
       </div>
 
       <div class="columnPrimary">
@@ -294,7 +299,7 @@
       <div class="columnSecondary">
         <div class="row">
           <p>
-            Spend some time with Me, <span class = "bold">Martha</span>, and all the othr sad folksies,
+            Just a few days breathing the fresh mountain air,
             and soon you're will be using those Teeth for grinnin!
             <br><br>
             DO you're part in making the world a smiley-ier place!
@@ -338,10 +343,11 @@
   <div class="row">
       <div class="columnPrimary">
         <p>
-          Good question! THe Habitat is the place for ANYONe who has A frown in there pocket
-          when they could be usin those teeth 2 smile!
+          That's OK!!! THe Habitat is the place for ANYONe who has A frown in there pocket
+          when they could be usin those teeth 2 smile! We have over 20 customers
+          on the Road to Recovery, & more join everey day!
           <br><br>
-          Here are our Princilpes::
+          Everyone at the Habitat abides by threesimple Principles:
         </p>
       </div>
 
@@ -367,7 +373,11 @@
       </div>
       <div class="columnPrimary">
         <p>
-        nothin 4 now
+        THat's right! Is it oh-so-simple!
+        <br><br>
+        These tried and true steps will Turn Your Frown Upside-Out!
+        <br><br>
+        Please enjoy a brief promotional video tha's is made by me! Dr. HAbit!!! : - )
         </p>
       </div>
   </div>
@@ -375,7 +385,7 @@
   <div class="row" style="background:white">
     <div class="columnSmallW"><br></div>
     <div class="columnLargeW padding" style="height:40vw;width:70vw;padding:0.6%">
-      <object style="width:100%;height:100%;" data=https://www.youtube.com/embed/vOP9wJnhB8Q?rel=0&amp;showinfo=0">
+      <object style="width:100%;height:100%;" data="https://www.youtube.com/embed/vOP9wJnhB8Q?rel=0&amp;showinfo=0">
       </object>
     </div>
     <div class="columnSmallW"></div>
