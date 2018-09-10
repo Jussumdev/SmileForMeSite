@@ -28,27 +28,20 @@
     a:focus { text-decoration: none; color:#6b6a6a; }
     a:hover, a:active { text-decoration: none; color:#6b6a6a }
 
-    /* Colors */
-    .quote {color: #ff8c1a}
-    .sinister {color: #ff0000}
-    .dramatic {color: #ffffff}
     .title {color: #36ff00; font-size:calc(20px + 6vw)}
     .subtitle {color: #004eff; font-size:calc(16px + 5vw)}
 
-    .bold {font-weight: bold;}
-    .italic {font-style: italic;}
     .big {font-size:calc(14px + 3vw);}
 
-    .silly {font-family: 'yugsly', Arial, sans-serif}
-
     html {
+        display:block;
         overflow: hidden;
         height: 100%;
     }
     body {
         overflow: auto;
         height: 100%;
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,120,120,0.15)), url('Images/Stars.png');
+        background-color: black;
         background-repeat: repeat;
         margin: 0px;
     }
@@ -59,19 +52,41 @@
         margin-bottom: 0px;
     }
     p {
+        font-family:'Arial';
+        font-size:20px;
+        color:#dbdbdb;
+        padding:0px;
+        text-align:left;
         margin-top: auto;
         margin-bottom: auto;
-        padding:20px;
-        text-align: center;
         font-size:calc(14px + 1vw);
-        color: #00f6ff;
+        color: #eeeeee;
     }
     img {
       max-width: 100%;
       max-height: 100%;
     }
-    div {
-      position: relative;
+
+    .columnPrimary {
+        float: left;
+        width: 70%;
+    }
+
+    .columnSecondary {
+        float: left;
+        width: 30%;
+    }
+
+    .columnHalf {
+        float: left;
+        width: 50%;
+        padding: 30px;
+    }
+
+    .columnThird {
+        float: left;
+        width:33.33%;
+        padding:0px;
     }
 
   </style>
@@ -79,6 +94,57 @@
 <body>
 
   <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+<!--======================================HEADER====================================-->
+  <div style="padding:8px">
+    <div class="columnPrimary">
+      <p>
+        <a href="grimaceHill.html">grimace hill</a>
+        <span style="color:#494949">///</span>
+        <a href="https://www.w3schools.com/html/">contact us</a>
+        <span style="color:#494949">///</span>
+        <a href="credits.html">credits</a>
+        <span style="color:#494949">///</span>
+        <a href="https://www.w3schools.com/html/">media inquiries</a>
+        <span style="color:#494949">///</span>
+        <a href="SmileForMePresskit.zip">presskit</a>
+      </p>
+    </div>
+    <div class="columnSecondary">
+      <p style="font-family:'Arial';font-size:10px;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
+        Illustrated, Written, Video, and Screen-captured media copr. 2018, Gabriel Lane & Yugo Limbo
+        <br> all rights reserved.
+      </p>
+    </div>
+  </div>
+
+  <div class="columnThird"><br></div>
+  <div class="columnThird">
+    <img src="Images/Us.gif" class="fill">
+  </div>
+  <div class="columnThird"><br></div>
+
+
+  <div style="padding:8px">
+    <div class="columnHalf">
+      <p style="text-align:right">
+        Gabriel Lane
+      <p>
+      <p style="color:#aaaaaa;font-size:14px;text-align:right">
+        info about me <br>
+        isn't that something
+      </p>
+    </div>
+    <div class="columnHalf">
+      <p>
+        Yugo Limbo <br>
+      </p>
+      <p style="color:#aaaaaa;font-size:14px">
+        info about you <br>
+        wowowowow! <br>
+      </p>
+    </div>
+  </div>
 
 
 </body>
