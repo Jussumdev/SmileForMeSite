@@ -41,8 +41,14 @@
 
     .silly {font-family: 'yugsly', Arial, sans-serif}
 
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
     body {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,120,120,0.2)), url('Images/Stars.png');
+        overflow: auto;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,120,120,0.15)), url('Images/Stars.png');
         background-repeat: repeat;
         margin: 0px;
     }
@@ -66,11 +72,6 @@
     }
     div {
       position: relative;
-    }
-    div.a {
-      -ms-transform: rotate(-20deg); /* IE 9 */
-      -webkit-transform: rotate(-20deg); /* Safari 3-8 */
-      transform: rotate(-20deg);
     }
 
     .bg1 {
@@ -450,7 +451,7 @@
 
   <div class="row">
       <div class="columnSecondary">
-        <img src="Images/HabitCheer.gif" alt="Me!" align = "center" class = "fill">
+        <img src="Images/HabitClick.gif" alt="Me!" align = "center" class = "fill">
       </div>
       <div class="columnPrimary">
         <p>
@@ -592,8 +593,33 @@
       </div>
   </div>
 
+<!--======================================FOOTER====================================-->
+
+  <div style="height:100px"></div>
+
+  <div class="row" style = "background-color:black">
+    <div class="columnPrimary">
+      <p style="font-family:'Arial';font-size:20px;color:#dbdbdb;padding:0px;padding-left:10px;text-align:left">
+        <a href="https://www.w3schools.com/html/">grimace hill</a>
+        <span style="color:#494949">///</span>
+        <a href="https://www.w3schools.com/html/">contact us</a>
+        <span style="color:#494949">///</span>
+        <a href="https://www.w3schools.com/html/">credits</a>
+        <span style="color:#494949">///</span>
+        <a href="https://www.w3schools.com/html/">media inquiries</a>
+        <span style="color:#494949">///</span>
+        <a href="https://www.w3schools.com/html/">presskit</a>
+      </p>
+    </div>
+    <div class="columnSecondary">
+      <p style="font-family:'Arial';font-size:10px;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
+        copr. 2018, Gabriel Lane & Yugo Limbo<br>All right reserved
+      </p>
+    </div>
+  </div>
 
 
+<!--
   <div class="row">
     <div class="column left"></div>
     <div class="column middle">
@@ -607,6 +633,7 @@
     </div>
     <div class="column right"></div>
   </div>
+-->
 
 </body>
 </html>
