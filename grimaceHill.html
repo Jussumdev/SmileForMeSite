@@ -80,7 +80,7 @@
     .columnHalf {
         float: left;
         width: 50%;
-        padding: 30px;
+        padding: 0px;
     }
 
     .columnThird {
@@ -93,6 +93,17 @@
         float: left;
         width:25%;
         padding:0px;
+    }
+
+    .row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 
   </style>
@@ -124,15 +135,41 @@
     </div>
   </div>
 
+
+
+  <div class="row">
+    <div class="columnSecondary" style="padding:30px">
+      <img src="Images/Us.gif">
+    </div>
+    <div class="columnPrimary" style="padding:30px">
+      <p style="color:#d17598;font-size:30px">
+        Smile For Me : - ) <br>
+      </p>
+      <p style="color:#A5BF64;font-size:24px">
+        <span style="color:#d17598">Smile For Me</span> is a First-Person Point-and-Click Adventure Game that
+        tells an immersive story through your interactions with a host of weird and friendly characters.
+        The Puzzles are unconventional, the People are bizarre, and the World hides a sinister secret.
+        <br><br>
+        With a mouthful of unique mechanics, you may know the controls, but
+        <span style="font-weight:bold">
+        you've never played a puzzle adventure like this before...
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+<!--======================================GABE & YUGO====================================-->
+
   <div class="columnFourth"><br></div>
   <div class="columnHalf">
-    <img src="Images/Us.gif" class="fill">
+    <img src="Images/Us.gif">
   </div>
   <div class="columnFourth"><br></div>
 
 
   <div style="padding:8px">
-    <div class="columnHalf">
+    <div class="columnHalf" style="padding:30px">
       <p style="text-align:right">
         Gabriel Lane
       <p>
@@ -142,7 +179,7 @@
         to code! Chat with me sometime about games and media!
       </p>
     </div>
-    <div class="columnHalf">
+    <div class="columnHalf" style="padding:30px">
       <p>
         Yugo Limbo <br>
       </p>
@@ -154,6 +191,10 @@
     </div>
   </div>
 
+Grimace Hill
+Grimace Hill is Us! The concept for Smile For Me began as a small experiencial game in late April of 2018, when we met.
+Our excitement for the world of the Habitat drove us to pursue the project in a larger form. A transcription of classic point-and-click
+mechanics into the first-person space was a design and UX challenge that we were intent on Conquering.
 
 </body>
 </html>
