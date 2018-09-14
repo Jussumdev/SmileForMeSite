@@ -49,10 +49,20 @@
         font-family:'Arial';
         color:#dbdbdb;
         padding:0px;
-        text-align:left;
         margin-top: auto;
         margin-bottom: auto;
     }
+
+    p.alignBlockL, p.alignBlockR {
+      text-align:left;
+    }
+
+    @media (max-width: 800px) {
+      p.alignBlockR {
+        text-align:right;
+      }
+    }
+
     img {
       max-width: 100%;
       max-height: 100%;
@@ -122,7 +132,7 @@
   </div>
 
   <div style="padding:3%">
-    <p>
+    <p class="alignBlockL">
       <span style="color:#6d474f;font-size:0.65cm;font-weight:bold">
         Yugo Limbo - Art and Design<br>
       </span>
@@ -139,7 +149,7 @@
 
     <div class="row" style="height:0.8cm;width:1px"></div>
 
-    <p>
+    <p class="alignBlockR">
       <span style="color:#93d68f;font-size:0.65cm;font-weight:bold">
         Gabe Lane - Game Design and Development<br>
       </span>
@@ -156,7 +166,7 @@
 
     <div class="row" style="height:0.8cm;width:1px"></div>
 
-    <p>
+    <p class="alignBlockL">
       <span style="color:#a996aa;font-size:0.6cm;font-weight:bold">
         Lucas Saur<br>
       </span>
@@ -168,7 +178,7 @@
 
     <div class="row" style="height:2cm;width:1px"></div>
 
-    <p>
+    <p class="alignBlockR">
       <span style="color:#e28c9f;font-size:0.6cm;font-weight:bold">
         Additional Voice Acting by:<br>
       </span>
