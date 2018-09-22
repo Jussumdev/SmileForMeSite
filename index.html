@@ -22,22 +22,22 @@
     }
 
     /* Textlink */
-    a { text-decoration: none; color:#dbdbdb }
-    a:visited { text-decoration: none; color:#dbdbdb; }
-    a:hover { text-decoration: none; color:#6b6a6a; }
-    a:focus { text-decoration: none; color:#6b6a6a; }
-    a:hover, a:active { text-decoration: none; color:#6b6a6a }
+    a, a:visited { text-decoration: none; color:#dbdbdb }
+    a:hover, a:focus, a:active { text-decoration: none; color:#6b6a6a; }
+
+    a.emphasis, a.emphasis:visited { text-decoration: none; color:#e23650 }
+    a.emphasis:hover, a.emphasis:focus, a.emphasis:active { text-decoration: none; color:#8e2535; }
 
     /* Colors */
     .quote {color: #ff8c1a}
     .sinister {color: #ff0000}
     .dramatic {color: #ffffff}
-    .title {color: #36ff00; font-size:calc(20px + 6vw)}
-    .subtitle {color: #004eff; font-size:calc(16px + 5vw)}
+    .title {color: #36ff00; font-size:2.5cm}
+    .subtitle {color: #004eff; font-size:2cm}
 
     .bold {font-weight: bold;}
     .italic {font-style: italic;}
-    .big {font-size:calc(14px + 3vw);}
+    .big {font-size:1.4cm;}
 
     .silly {font-family: 'yugsly', Arial, sans-serif}
 
@@ -54,7 +54,7 @@
     }
     h1 {
         text-align: center;
-        font-size: 50px;
+        font-size: 0.7cm;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -63,7 +63,7 @@
         margin-bottom: auto;
         padding:20px;
         text-align: center;
-        font-size:calc(14px + 1vw);
+        font-size: 0.7cm;
         color: #00f6ff;
     }
     img {
@@ -348,50 +348,39 @@
   </div>
 
   <div class="row">
-      <div class="columnPrimary">
-        <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
-      </div>
-
-      <div class="columnSecondary">
-        <div class="row">
-          <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
-        </div>
-        <div class="row">
-          <p>
-            The Habitat is an amazing New resort
-            wear you can go to learn how to smile again!
-            <br>
-            <img src="Images/Stuffin/home.gif" alt="Me!" title="Me!">
-            <img src="Images/Stuffin/home_gif.gif" alt="Me!" title="Me!">
-            <br>
-            The Habitat is chock-full of the things 2 do! Play carnival games, relax in hte sun,
-            or even get a drink at the exclusive Lounge!
-          </p>
-        </div>
-      </div>
+    <div class="columnHalf">
+      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+    </div>
+    <div class="columnHalf">
+      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+    </div>
   </div>
 
   <div class="row">
-      <div class="columnSecondary">
-        <div class="row">
-          <p>
-            Just a few days breathing the fresh mountain air,
-            and soon you're will be using those Teeth for grinnin!
-            <br><br>
-            DO you're part in making the world a smiley-ier place!
-          </p>
-        </div>
-        <div class="row">
-          <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
-        </div>
-      </div>
-
-      <div class="columnPrimary">
-        <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
-      </div>
+    <p>
+      The Habitat is an amazing New resort
+      wear you can go to learn how to smile again!
+      <br>
+      <img src="Images/Stuffin/home.gif" alt="Me!" title="Me!">
+      <img src="Images/Stuffin/home_gif.gif" alt="Me!" title="Me!">
+      <br>
+      The Habitat is chock-full of the things 2 do! Play carnival games, relax in hte sun,
+      or even get a drink at the exclusive Lounge!
+      Just a few days breathing the fresh mountain air,
+      and soon you're will be using those Teeth for grinnin!
+      <br><br>
+      DO you're part in making the world a smiley-ier place!
+    </p>
   </div>
 
-
+  <div class="row">
+    <div class="columnHalf">
+      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+    </div>
+    <div class="columnHalf">
+      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+    </div>
+  </div>
 
 <!--======================================THE RULEZ====================================-->
   <div style="height:80px"></div>
@@ -473,32 +462,33 @@
       </div>
   </div>
 
-  <div class="columnSmallW"><br></div>
 
-
-    <div style="height:70vw;width:100vw;padding:5vw;background-color:black">
-      <div style="width:100%;height:86%;padding:0px;">
-        <object style="width:100%;height:100%;" data="https://www.youtube.com/embed/vOP9wJnhB8Q?rel=0&amp;showinfo=0">
-        </object>
-      </div>
-      <div style="width:100%;height:14%;padding:0px;">
-        <p style="font-family:'yugsly';font-size:40px;color:#dbdbdb">
-          <a href="grimaceHill.html">SMILE FOR ME</a>
-          <span style="font-family:arial;color:#494949">///</span>
-          <a href="credits.html">CREDITS</a>
-          <span style="font-family:arial;color:#494949">///</span>
-          <a href="mailto:gabeoflane@gmail.com,bronxted@gmail.com?subject=Contact%20Us">CONTACT US</a>
-          <br>
-          <a href="mailto:gabeoflane@gmail.com,bronxted@gmail.com?subject=SmileForMe%20Media%20Inquires">MEDIA INQUIRIES</a>
-          <span style="font-family:arial;color:#494949">///</span>
-          <a href="SmileForMePresskit.zip">PRESSKIT</a>
-        </p>
-      </div>
+  <div style="width:100vw;height:60vw;padding:5vw;background-color:black">
+    <div style="width:100%;height:100%;padding:0px;">
+      <object style="width:100%;height:100%;" data="https://www.youtube.com/embed/vOP9wJnhB8Q?rel=0&amp;showinfo=0">
+      </object>
     </div>
+  </div>
+
+  <div style="width:100%;padding:0px;background-color:black">
+    <p style="font-family:'yugsly';font-size:1cm;color:#dbdbdb">
+      <span style="font-size:2cm">
+        <a class = "emphasis" href="grimaceHill.html">SMILE FOR ME</a>
+      </span>
+      <br>
+      <a href="credits.html">CREDITS</a>
+      <span style="font-family:arial;color:#494949">///</span>
+      <a href="mailto:gabeoflane@gmail.com,bronxted@gmail.com?subject=Contact%20Us">CONTACT US</a>
+      <br>
+      <a href="mailto:gabeoflane@gmail.com,bronxted@gmail.com?subject=SmileForMe%20Media%20Inquires">MEDIA INQUIRIES</a>
+      <span style="font-family:arial;color:#494949">///</span>
+      <a href="SmileForMePresskit.zip">PRESSKIT</a>
+    </p>
+  </div>
 
 <!--======================================HABBY CUSTOMERZ====================================-->
 
-  <div style="height:100px"></div>
+  <div style="height:1cm;width:1cm"></div>
 
   <div class="row">
       <div class="columnSmallW"><br></div>
@@ -508,7 +498,7 @@
       <div class="columnSmallW"></div>
   </div>
 
-  <div style="height:100px"></div>
+  <div style="height:1cm;width:1cm"></div>
 
   <div class="row" style="padding-left:10px">
       <div class="columnPrimary bioBox bg1">
@@ -617,12 +607,12 @@
 
 <!--======================================FOOTER====================================-->
 
-  <div style="height:100px"></div>
+  <div style="height:1cm;width:1cm"></div>
 
   <div class="row" style = "background-color:black;height:5cm">
     <div class="columnPrimary">
-      <p style="font-family:'Arial';font-size:20px;color:#dbdbdb;padding:0px;padding-left:10px;text-align:left">
-        <a href="grimaceHill.html">Smile For Me</a>
+      <p style="font-family:'Arial';font-size:0.5cm;color:#dbdbdb;padding:0px;padding-left:10px;text-align:left">
+        <a class = "emphasis" href="grimaceHill.html">Smile For Me</a>
         <span style="color:#494949">///</span>
         <a href="credits.html">credits</a>
         <span style="color:#494949">///</span>
@@ -634,7 +624,7 @@
       </p>
     </div>
     <div class="columnSecondary">
-      <p style="font-family:'Arial';font-size:10px;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
+      <p style="font-family:'Arial';font-size:0.4cm;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
         Illustrated, Written, Video, and Screen-captured media copr. 2018, Gabriel Lane & Yugo Limbo
         <br> all rights reserved.
       </p>
