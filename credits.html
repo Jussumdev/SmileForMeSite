@@ -22,11 +22,11 @@
     }
 
     /* Textlink */
-    a { text-decoration: none; color:#dbdbdb }
-    a:visited { text-decoration: none; color:#dbdbdb; }
-    a:hover { text-decoration: none; color:#6b6a6a; }
-    a:focus { text-decoration: none; color:#6b6a6a; }
-    a:hover, a:active { text-decoration: none; color:#6b6a6a}
+    a, a:visited { text-decoration: none; color:#dbdbdb }
+    a:hover, a:focus, a:active { text-decoration: none; color:#6b6a6a; }
+
+    a.emphasis, a.emphasis:visited { text-decoration: none; color:#e23650 }
+    a.emphasis:hover, a.emphasis:focus, a.emphasis:active { text-decoration: none; color:#8e2535; }
 
     html {
         overflow: hidden;
@@ -41,12 +41,13 @@
     }
     h1 {
         text-align: center;
-        font-size: 50px;
+        font-size: 2cm;
         margin-top: 0px;
         margin-bottom: 0px;
     }
     p {
         font-family:'Arial';
+        font-size: 0.5cm
         color:#dbdbdb;
         padding:0px;
         margin-top: auto;
@@ -101,8 +102,8 @@
 <!--======================================HEADER====================================-->
   <div class = "row" style="padding:8px">
     <div class="columnPrimary">
-      <p style = "font-size:20px">
-        <a href="index.html">back to homepage</a>
+      <p style = "font-size:0.5cm">
+        <a class = "emphasis" href="index.html">back to homepage</a>
         <span style="color:#494949">///</span>
         <a href="grimaceHill.html">Smile For Me</a>
         <span style="color:#494949">///</span>
@@ -114,24 +115,24 @@
       </p>
     </div>
     <div class="columnSecondary">
-      <p style="font-family:'Arial';font-size:10px;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
+      <p style="font-family:'Arial';font-size:0.4cm;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
         Illustrated, Written, Video, and Screen-captured media copr. 2018, Gabriel Lane & Yugo Limbo
         <br> all rights reserved.
       </p>
     </div>
   </div>
 
-  <div class="row" style="height:1cm;width:1px"></div>
+  <div class="row" style="height:1cm;width:1cm"></div>
   <div style="height:2px;width:100%;background-color:#878787"></div>
-  <div class="row" style="height:1cm;width:1px"></div>
+  <div class="row" style="height:1cm;width:1cm"></div>
 
 <!--======================================SMILE FOR ME====================================-->
 
   <div class="row">
-    <p style="color:#d17598;font-size:40px;text-align:center">
+    <p style="color:#d17598;font-size:2cm;text-align:center">
       <span style="font-family:'yugsly';font-size:80px">CREDITS</span>
     </p>
-    <p style="color:#d17598;font-size:25px;text-align:center">
+    <p style="color:#d17598;font-size:0.8cm;text-align:center">
       Concept and Story by <span style="font-weight:bold">Yugo Limbo & Gabe Lane</span>
     </p>
   </div>
@@ -156,7 +157,7 @@
       </span>
     </p>
 
-    <div class="row" style="height:0.8cm;width:1px"></div>
+    <div class="row" style="height:0.8cm;width:1cm"></div>
 
     <p class="alignBlockL">
       <span style="color:#639b67;font-size:0.65cm;font-weight:bold">

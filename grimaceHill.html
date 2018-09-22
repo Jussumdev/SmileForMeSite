@@ -22,16 +22,11 @@
     }
 
     /* Textlink */
-    a { text-decoration: none; color:#dbdbdb }
-    a:visited { text-decoration: none; color:#dbdbdb; }
-    a:hover { text-decoration: none; color:#6b6a6a; }
-    a:focus { text-decoration: none; color:#6b6a6a; }
-    a:hover, a:active { text-decoration: none; color:#6b6a6a }
+    a, a:visited { text-decoration: none; color:#dbdbdb }
+    a:hover, a:focus, a:active { text-decoration: none; color:#6b6a6a; }
 
-    .title {color: #36ff00; font-size:calc(20px + 6vw)}
-    .subtitle {color: #004eff; font-size:calc(16px + 5vw)}
-
-    .big {font-size:calc(14px + 3vw);}
+    a.emphasis, a.emphasis:visited { text-decoration: none; color:#e23650 }
+    a.emphasis:hover, a.emphasis:focus, a.emphasis:active { text-decoration: none; color:#8e2535; }
 
     html {
         overflow: hidden;
@@ -46,20 +41,18 @@
     }
     h1 {
         text-align: center;
-        font-size: 50px;
+        font-size: 2cm;
         margin-top: 0px;
         margin-bottom: 0px;
     }
     p {
         font-family:'Arial';
-        font-size:20px;
+        font-size:0.5cm;
         color:#dbdbdb;
         padding:0px;
         text-align:left;
         margin-top: auto;
         margin-bottom: auto;
-        font-size:26px;
-        color: #eeeeee;
     }
     img {
       max-width: 100%;
@@ -125,8 +118,8 @@
 <!--======================================HEADER====================================-->
   <div class = "row" style="padding:8px">
     <div class="columnPrimary">
-      <p style="font-size:20px">
-        <a href="index.html">back to homepage</a>
+      <p style="font-size:0.5cm">
+        <a class = "emphasis" href="index.html">back to homepage</a>
         <span style="color:#494949">///</span>
         <a href="credits.html">credits</a>
         <span style="color:#494949">///</span>
@@ -138,7 +131,7 @@
       </p>
     </div>
     <div class="columnSecondary">
-      <p style="font-family:'Arial';font-size:10px;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
+      <p style="font-family:'Arial';font-size:0.4cm;color:#dbdbdb;padding:0px;padding-right:10px;text-align:right">
         Illustrated, Written, Video, and Screen-captured media copr. 2018, Gabriel Lane & Yugo Limbo
         <br> all rights reserved.
       </p>
@@ -150,14 +143,14 @@
 <!--======================================SMILE FOR ME====================================-->
 
   <div class="row">
-    <p style="color:#008e9e;font-size:40px;text-align:center">
+    <p style="color:#008e9e;font-size:2cm;text-align:center">
       <span style="font-family:'yugsly';font-size:80px">SMILE FOR ME</span><br>: - )<br>
     </p>
   </div>
 
   <div class="row">
     <div class="columnPrimary" style="padding:8px">
-      <p style="color:#dce8d7;font-size:24px">
+      <p style="color:#dce8d7;font-size:0.6cm">
         <br>
         <span style="color:#008e9e">Smile For Me</span> is a First-Person Point-and-Click Adventure Game that
         tells an immersive story through your interactions with a host of weird and friendly characters.
@@ -177,6 +170,15 @@
 <!--======================================SCREENSHOTS====================================-->
 
   <div class="row" style="height:0.5cm;width:1px"></div>
+
+  <div class = "row">
+    <p style="text-align:center;color:#dce8d7;font-size:1.5cm;font-family:yugsly">
+      SCREENSHOTS<br>
+      <span style="font-size:0.7cm">
+      (CLICK TO ENLARGE)
+      </span>
+    </p>
+  </div>
 
   <div class = "row" style = "padding:0px">
     <div class="columnFourth">
@@ -228,13 +230,13 @@
 
 <!--======================================GABE & YUGO====================================-->
 
-  <div class = "row">
-    <p style="text-align:center;font-weight:bold;color:#ffffff">
-      Who are we?
-    </p>
-  </div>
+<div class = "row">
+  <p style="text-align:center;color:#dce8d7;font-size:1.5cm;font-family:yugsly">
+    WHO ARE WE?
+  </p>
+</div>
 
-  <div class="row" style="height:40px;width:1px">
+  <div class="row" style="height:1cm;width:1cm">
   </div>
 
   <div class = "row">
@@ -251,7 +253,7 @@
       <p style="text-align:right;color:#cce09a;font-weight:bold">
         Gabriel Lane<br>
       </p>
-      <p style="color:#a5bf64;font-size:20px;text-align:right">
+      <p style="color:#a5bf64;font-size:0.5cm;text-align:right">
         Whoa! I'm just a College Guy with a hankering for Evocative Art. I'm a game designer at heart,
         who loves to bring worlds and systems to life! I study Information Science and I love
         to code! Chat with me sometime about games and media!
@@ -261,7 +263,7 @@
       <p style="color:#e8a7be;font-weight:bold">
         Yugo Limbo <br>
       </p>
-      <p style="color:#c76488;font-size:20px">
+      <p style="color:#c76488;font-size:0.5cm">
         Hello hello hello! I’m Yugo, an animator, hawaiian shirt enthusiast, cartoonist,
         director..and everything related, from Detroit! Inspired by Eastern European & American
         cartoons from the 50s-60s, I do my best to spread the funky flow that is Yugo!
@@ -294,10 +296,10 @@
       <img src="Images/GrimaceHill.png" style="width:100%">
     </div>
     <div class="columnPrimary" style="padding:8px">
-      <p style="color:#985980;font-size:30px;font-style:italic">
+      <p style="color:#985980;font-size:0.9cm;font-style:italic">
         Grimace Hill<br>
       </p>
-      <p style="color:#5b998d;font-size:20px">
+      <p style="color:#5b998d;font-size:0.5cm">
         Grimace Hill is Us! The concept for Smile For Me began as a small experiential game in late April of 2018, when we met.
         Our excitement for the world of the Habitat drove us to pursue the project in a larger form. A transcription of classic point-and-click
         mechanics into the first-person space was a design and UX challenge that we were intent on Conquering.
@@ -316,7 +318,7 @@
   <div class="row" style="height:2cm;width:1px"></div>
 
   <div class="row">
-    <p style="color:#c63b5f;font-size:20px;text-align:center">
+    <p style="color:#c63b5f;font-size:0.4cm;text-align:center">
       ...and don't forget to Smile For Me : - )
     </p>
   </div>
