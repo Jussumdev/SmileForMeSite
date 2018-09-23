@@ -21,6 +21,15 @@
     	     url('Fonts/yugsly-webfont.svg#webfont') format('svg');
     }
 
+    @font-face{
+    	font-family: 'domotika';
+    	src: url('Fonts/domotika-trial.light-webfont.eot');
+    	src: url('Fonts/domotika-trial.light-webfont.eot?#iefix') format('embedded-opentype'),
+    	     url('Fonts/domotika-trial.light-webfont.woff') format('woff'),
+    	     url('Fonts/domotika-trial.light-webfont.ttf') format('truetype'),
+    	     url('Fonts/domotika-trial.light-webfont.svg#webfont') format('svg');
+    }
+
     /* Textlink */
     a, a:visited { text-decoration: none; color:#dbdbdb }
     a:hover, a:focus, a:active { text-decoration: none; color:#6b6a6a; }
@@ -46,7 +55,7 @@
         margin-bottom: 0px;
     }
     p {
-        font-family:'Arial';
+        font-family:'domotika';
         font-size:0.5cm;
         color:#dbdbdb;
         padding:0px;
@@ -118,7 +127,7 @@
 <!--======================================HEADER====================================-->
   <div class = "row" style="padding:8px">
     <div class="columnPrimary">
-      <p style="font-size:0.5cm">
+      <p style="font-size:0.5cm;font-family:'Arial'">
         <a class = "emphasis" href="index.html">back to homepage</a>
         <span style="color:#494949">///</span>
         <a href="credits.html">credits</a>
@@ -143,33 +152,43 @@
 <!--======================================SMILE FOR ME====================================-->
 
   <div class="row">
-    <p style="color:#008e9e;font-size:2cm;text-align:center">
-      <span style="font-family:'yugsly';font-size:80px">SMILE FOR ME</span><br>: - )<br>
+    <p style="color:#008e9e;font-size:2cm;text-align:center;font-family:'yugsly'">
+      SMILE FOR ME
     </p>
   </div>
 
-  <div class="row">
-    <div class="columnPrimary" style="padding:8px">
-      <p style="color:#dce8d7;font-size:0.6cm">
-        <br>
-        <span style="color:#008e9e">Smile For Me</span> is a First-Person Point-and-Click Adventure Game that
-        tells an immersive story through your interactions with a host of weird and friendly characters.
-        The Puzzles are unconventional, the People are bizarre, and the World hides a sinister secret.
-        <br><br>
-        With a mouthful of unique mechanics, you may know the controls, but
-        <span style="font-weight:bold;color:#c63b5f">
-        You've never played a puzzle adventure like this before...
-        </span>
-      </p>
+  <div class="row" style="background-color:#06373d">
+    <div class="columnPrimary" align="center">
+      <div style="width:60vw;height:30vw">
+          <object style="width:100%;height:100%;" data="https://www.youtube.com/embed/vOP9wJnhB8Q?rel=0&amp;showinfo=0">
+          </object>
+      </div>
     </div>
     <div class="columnSecondary" style="padding:8px">
       <img src="Images/logosedit.png">
     </div>
   </div>
 
+  <div class="row" style="padding:10px 50px">
+    <img src="Images/ComingSoon.png">
+  </div>
+
+  <div style="padding:10px 80px;background-color:#06373d">
+    <p style="color:#008e9e;font-size:0.55cm;text-align:center">
+      <span style="color:#79d4e0">Smile For Me</span> is a First-Person Point-and-Click Adventure Game that
+      tells an immersive story through your interactions with a host of weird and friendly characters.
+      The Puzzles are unconventional, the People are bizarre, and the World hides a sinister secret.
+      <br><br>
+      With a mouthful of unique mechanics, you may know the controls, but
+      <span style="font-style:italic;color:#c63b5f">
+      You've never played a puzzle adventure like this before...
+      </span>
+    </p>
+  </div>
+
 <!--======================================SCREENSHOTS====================================-->
 
-  <div class="row" style="height:0.5cm;width:1px"></div>
+  <div style="height:3.5cm;width:1cm"></div>
 
   <div class = "row">
     <p style="text-align:center;color:#dce8d7;font-size:1.5cm;font-family:yugsly">
@@ -226,9 +245,11 @@
     </div>
   </div>
 
-  <div class="row" style="height:1cm;width:1px"></div>
 
 <!--======================================GABE & YUGO====================================-->
+
+<div class="row" style="height:2cm;width:1cm"></div>
+
 
 <div class = "row">
   <p style="text-align:center;color:#dce8d7;font-size:1.5cm;font-family:yugsly">
@@ -275,12 +296,12 @@
   <div class="row" style="padding:8px">
     <div class="columnHalf" style="padding:30px">
       <p style="text-align:right">
-        <a href="https://twitter.com/gabeoflane" style="color:#cce09a">Tweet'ems</a>
+        <a href="https://twitter.com/gabeoflane" target="_blank" style="color:#cce09a">Tweet'ems</a>
       </p>
     </div>
     <div class="columnHalf" style="padding:30px">
       <p>
-        <a href="https://twitter.com/yugsly" style="color:#e8a7be">Twitta!</a>
+        <a href="https://twitter.com/yugsly" target="_blank" style="color:#e8a7be">Twitta!</a>
       </p>
     </div>
   </div>
@@ -293,7 +314,7 @@
 
   <div class="row">
     <div class="columnSecondary" style="padding:8px">
-      <img src="Images/GrimaceHill.png" style="width:100%">
+      <img src="Images/grimaceHill.png" style="width:100%">
     </div>
     <div class="columnPrimary" style="padding:8px">
       <p style="color:#985980;font-size:0.9cm;font-style:italic">
@@ -318,7 +339,7 @@
   <div class="row" style="height:2cm;width:1px"></div>
 
   <div class="row">
-    <p style="color:#c63b5f;font-size:0.4cm;text-align:center">
+    <p style="color:#c63b5f;font-size:0.4cm;text-align:center;font-family:'Arial'">
       ...and don't forget to Smile For Me : - )
     </p>
   </div>

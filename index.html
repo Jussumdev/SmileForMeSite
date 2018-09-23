@@ -28,11 +28,14 @@
     a.emphasis, a.emphasis:visited { text-decoration: none; color:#e23650 }
     a.emphasis:hover, a.emphasis:focus, a.emphasis:active { text-decoration: none; color:#8e2535; }
 
+    a.title, a.title:visited { text-decoration: none; color:#36ff00 }
+    a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e590e; }
+
     /* Colors */
     .quote {color: #ff8c1a}
     .sinister {color: #ff0000}
     .dramatic {color: #ffffff}
-    .title {color: #36ff00; font-size:2.5cm}
+    .title {font-size:2.5cm}
     .subtitle {color: #004eff; font-size:2cm}
 
     .bold {font-weight: bold;}
@@ -67,8 +70,11 @@
         color: #00f6ff;
     }
     img {
-      max-width: 100%;
-      max-height: 100%;
+      height:1em;
+    }
+    img.fill {
+      width: 100%;
+      height: 100%;
     }
     div {
       position: relative;
@@ -219,14 +225,16 @@
 <!--======================================TITLE====================================-->
 
   <h1 class = "title bold massive">
-    SMILE FOR ME
+    <a class = "title" href = "about.html">
+      SMILE FOR ME
+    </a>
   </h1>
   <h1 class = "subtitle bold massive">
     THE OFFICIAL HABITAT HOMEPAGE
   </h1>
 
   <p>
-    <img src="Images/ByMe.png" alt="Me!" title="Me!" width = "300">
+    <img src="Images/ByMe.png"  style="width:300px;height:100px">
   </p>
 
   <p class="italic bold dramatic">
@@ -248,9 +256,9 @@
         Oh hi! I did'nt seeyou there! I am Dr. Habit and welcome to my website!
         Hosted on the
         <br>
-        <img src="Images/Stuffin/cool.gif" alt="Me!" title="Me!" width = 7%>
+        <img src="Images/Stuffin/cool.gif" style="height:1em">
         <span class="quote">World Wide Web : - )</span>
-        <img src="Images/Stuffin/cool.gif" alt="Me!" title="Me!" width = 7%>
+        <img src="Images/Stuffin/cool.gif" style="height:1em">
         <br>
         I am just a friendly guy who love's Smiles more than ANYTHING!
         I decided that there are were too many frownies : - ( in the world and
@@ -267,21 +275,21 @@
       </div>
 
       <div class="columnSecondary">
-        <img src="Images/HabitWave.gif" alt="Me!" title="Me!" align = "center">
+        <img src="Images/HabitWave.gif" align = "center" class = "fill">
       </div>
   </div>
 
   <div class="row">
       <div class="columnSecondary">
-          <img src="Images/HabitSign.gif" alt="Me!" align = "center" class = "fill">
+          <img src="Images/HabitSign.gif" align = "center" class = "fill">
       </div>
 
       <div class="columnPrimary">
         <p>
         FOr many several years,
-        <img src="Images/Stuffin/martha.gif" width = 7%>
+        <img src="Images/Stuffin/martha.gif">
         <span class = "bold italic">Martha</span>
-        <img src="Images/Stuffin/martha.gif" width = 7%>
+        <img src="Images/Stuffin/martha.gif">
         and I have been creatingb a place for poeple who
         just do not have a smile : - (
         <br><br>
@@ -296,9 +304,9 @@
         <br>
         Do'nt worry silly-head! If you just Can't Find Your Happiness, there's still
         <span class = "sinister bold italic">The Big Event</span>!!
-        <img src="Images/Stuffin/martha.gif" alt="Me!" title="Me!" width = 7%>
+        <img src="Images/Stuffin/martha.gif" style="height:1em">
         <span class = "bold italic">Martha</span>
-        <img src="Images/Stuffin/martha.gif" alt="Me!" title="Me!" width = 7%>
+        <img src="Images/Stuffin/martha.gif" style="height:1em">
         has been peparing really hard to make sure that all
         everyone will b laughing and having a good time! Satisfaction guaranteed!
         <br>
@@ -323,11 +331,11 @@
     <p>
     I can hear you saying!:
     <br>
-    <img src="Images/Stuffin/aflower.gif" alt="Me!" title="Me!">
+    <img src="Images/Stuffin/aflower.gif" style="height:1em">
     <br>
     <span class = "big bold quote">"Well What Is The Name Of This Magical Place Where I Can Learn How To Be Happy?"</span>
     <br>
-    <img src="Images/Stuffin/aflower.gif" alt="Me!" title="Me!">
+    <img src="Images/Stuffin/aflower.gif" style="height:1em">
     <br>
     sTOP ASKING ME QUESTIONS!!
     <br><br>
@@ -339,20 +347,23 @@
   </div>
 
 <!--======================================PRETTY PIKCHERS====================================-->
-  <div style="height:70px">
-  </div>
-
-  <img src="Images/HabitatTitle.png" alt="Me!" class="center" class = "fill">
-
-  <div style="height:70px">
-  </div>
+  <div style="height:1cm;width:1cm"></div>
 
   <div class="row">
-    <div class="columnHalf">
-      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+    <img src="Images/HabitatTitle.png" align="center" class = "fill">
+  </div>
+
+  <div style="height:1cm;width:1cm"></div>
+
+  <div class="row">
+    <div class="columnThird">
+      <img src="Images/Screenshots/Env3Crop.png" align="center" class = "fill">
     </div>
-    <div class="columnHalf">
-      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+    <div class="columnThird">
+      <img src="Images/Screenshots/Env1Crop.png" align="center" class = "fill">
+    </div>
+    <div class="columnThird">
+      <img src="Images/Screenshots/Env14Crop.png" align="center" class = "fill">
     </div>
   </div>
 
@@ -361,8 +372,8 @@
       The Habitat is an amazing New resort
       wear you can go to learn how to smile again!
       <br>
-      <img src="Images/Stuffin/home.gif" alt="Me!" title="Me!">
-      <img src="Images/Stuffin/home_gif.gif" alt="Me!" title="Me!">
+      <img src="Images/Stuffin/home.gif">
+      <img src="Images/Stuffin/home_gif.gif">
       <br>
       The Habitat is chock-full of the things 2 do! Play carnival games, relax in hte sun,
       or even get a drink at the exclusive Lounge!
@@ -375,10 +386,10 @@
 
   <div class="row">
     <div class="columnHalf">
-      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+      <img src="Images/Screenshots/Env2.png" align="center" class = "fill">
     </div>
     <div class="columnHalf">
-      <img src="Images/TestPic1.jpg" alt="Me!" class="center" class = "fill">
+      <img src="Images/Screenshots/Env4.png" align="center" class = "fill">
     </div>
   </div>
 
@@ -394,7 +405,7 @@
         <br><br>
         To that, I answer!:
         </p>
-        <img src="Images/HabitShocked.gif" alt="Me!" align = "center" class = "fill">
+        <img src="Images/HabitShocked.gif" align = "center" class = "fill">
       </div>
       <div class="columnThird"></div>
   </div>
@@ -405,22 +416,22 @@
 
   <div class="row">
       <div class="columnSecondary">
-        <img src="Images/HabitCheer.gif" alt="Me!" align = "center" class = "fill">
+        <img src="Images/HabitCheer.gif" align = "center" class = "fill">
       </div>
       <div class="columnPrimary">
         <p>
           That's OK!!!
-          <img src="Images/Stuffin/clown.gif" alt="Me!" title="Me!" width = 7%>
+          <img src="Images/Stuffin/clown.gif" style="height:1em">
           THe Habitat is the place for ANYONe who has A frown in there pocket
           when they could be usin those teeth 2 smile!
-          <img src="Images/Stuffin/teetha.gif" alt="Me!" title="Me!" width = 7%>
-          <img src="Images/Stuffin/love_003.gif" alt="Me!" title="Me!" width = 7%>
-          <img src="Images/Stuffin/teetha.gif" alt="Me!" title="Me!" width = 7%>
+          <img src="Images/Stuffin/teetha.gif" style="height:1em">
+          <img src="Images/Stuffin/love_003.gif" style="height:1em">
+          <img src="Images/Stuffin/teetha.gif" style="height:1em">
           We have over 20 customers
           on the Road to Recovery, & more join everey day!
           <br>
-          <img src="Images/Stuffin/love2.gif" alt="Me!" title="Me!">
-          <img src="Images/Stuffin/love2.gif" alt="Me!" title="Me!">
+          <img src="Images/Stuffin/love2.gif"   >
+          <img src="Images/Stuffin/love2.gif"   >
           <br>
           Everyone at the Habitat abides by threesimple Principles:
         </p>
@@ -431,7 +442,7 @@
     <div class="columnSmallW"><br></div>
     <div class="columnLargeW">
       <div id="rotater">
-        <img src="Images/TheRules.png" alt="Me!" align = "center" class = "fill">
+        <img src="Images/TheRules.png"   align = "center" class = "fill">
       </div>
     </div>
     <div class="columnSmallW"></div>
@@ -442,40 +453,40 @@
   <div class="row">
       <div class="columnPrimary">
         <p>
-        <img src="Images/Stuffin/02.gif" alt="Me!" title="Me!">
-        <img src="Images/Stuffin/dove-r.gif" alt="Me!" title="Me!">
-        <img src="Images/Stuffin/02.gif" alt="Me!" title="Me!">
+        <img src="Images/Stuffin/02.gif">
+        <img src="Images/Stuffin/dove-r.gif">
+        <img src="Images/Stuffin/02.gif">
         <br>
         THat's right! Is it oh-so-simple!
         <br>
-        <img src="Images/Stuffin/02.gif" alt="Me!" title="Me!">
-        <img src="Images/Stuffin/monopoly.gif" alt="Me!" title="Me!">
-        <img src="Images/Stuffin/02.gif" alt="Me!" title="Me!">
+        <img src="Images/Stuffin/02.gif">
+        <img src="Images/Stuffin/monopoly.gif">
+        <img src="Images/Stuffin/02.gif">
         <br>
         These tried and true steps will Turn Your Frown Upside-Out!
-        <br><br>
+        <br>
+        <img src="Images/Stuffin/02.gif">
+        <img src="Images/Stuffin/smile-cheezy.gif">
+        <img src="Images/Stuffin/02.gif">
+        <br>
         Please enjoy a brief promotional video tha's is made by me! Dr. HAbit!!! : - )
         </p>
       </div>
       <div class="columnSecondary">
-        <img src="Images/HabitClick.gif" alt="Me!" align = "center" class = "fill">
+        <img src="Images/HabitClick.gif" align = "center" class = "fill">
       </div>
   </div>
 
 
   <div style="width:100vw;height:60vw;padding:5vw;background-color:black">
-    <div style="width:100%;height:100%;padding:0px;">
       <object style="width:100%;height:100%;" data="https://www.youtube.com/embed/vOP9wJnhB8Q?rel=0&amp;showinfo=0">
       </object>
-    </div>
   </div>
 
   <div style="width:100%;padding:0px;background-color:black">
     <p style="font-family:'yugsly';font-size:1cm;color:#dbdbdb">
-      <span style="font-size:2cm">
-        <a class = "emphasis" href="grimaceHill.html">SMILE FOR ME</a>
-      </span>
-      <br>
+      <a class = "emphasis" href="about.html">ABOUT THE GAME</a>
+      <span style="font-family:arial;color:#494949">///</span>
       <a href="credits.html">CREDITS</a>
       <span style="font-family:arial;color:#494949">///</span>
       <a href="mailto:gabeoflane@gmail.com,bronxted@gmail.com?subject=Contact%20Us">CONTACT US</a>
@@ -493,7 +504,7 @@
   <div class="row">
       <div class="columnSmallW"><br></div>
       <div class="columnLargeW">
-        <img src="Images/HabitCustomers.gif" alt="Me!" align = "center" class = "fill">
+        <img src="Images/HabitCustomers.gif"   align = "center" class = "fill">
       </div>
       <div class="columnSmallW"></div>
   </div>
@@ -511,7 +522,7 @@
 
       <div class="columnSecondary">
         <div class="bioPhoto">
-          <img src="Images/PhotoJerafina.png" alt="Me!" align = "center" width="100%">
+          <img src="Images/PhotoJerafina.png" align="center" class="fill">
         </div>
         <div class="row">
           <p style="color:#FFFFFF;font-family:'yugsly';margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0px">
@@ -524,7 +535,7 @@
   <div class="row" style="padding-right:10px">
     <div class="columnSecondary">
       <div class="bioPhoto">
-        <img src="Images/PhotoPutunia.png" alt="Me!" align = "center" width="100%">
+        <img src="Images/PhotoPutunia.png" align="center" class="fill">
       </div>
       <div class="row">
         <p style="color:#FFFFFF;font-family:'yugsly';margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0px">
@@ -553,7 +564,7 @@
 
       <div class="columnSecondary">
         <div class="bioPhoto">
-          <img src="Images/PhotoRandy.png" alt="Me!" align = "center" width="100%">
+          <img src="Images/PhotoRandy.png" align="center" class="fill">
         </div>
         <div class="row">
           <p style="color:#FFFFFF;font-family:'yugsly';margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0px">
@@ -566,7 +577,7 @@
   <div class="row" style="padding-right:10px">
       <div class="columnSecondary">
         <div class="bioPhoto">
-          <img src="Images/PhotoNat.png" alt="Me!" align = "center" width="100%">
+          <img src="Images/PhotoNat.png" align="center" class="fill">
         </div>
         <div class="row">
           <p style="color:#FFFFFF;font-family:'yugsly';margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0px">
@@ -586,7 +597,7 @@
 
 <!--======================================FINAL REMARKS====================================-->
 
-  <div class="row" style="height:80px"></div>
+  <div class="row" style="height:4cm;width:1cm"></div>
 
   <div class="row">
       <div class="columnPrimary">
@@ -601,7 +612,7 @@
       </div>
 
       <div class="columnSecondary">
-        <img src="Images/HabitLove.gif" alt="Me!" title="Me!" align = "center">
+        <img src="Images/HabitLove.gif" align="center" class="fill">
       </div>
   </div>
 
@@ -612,7 +623,7 @@
   <div class="row" style = "background-color:black">
     <div class="columnPrimary">
       <p style="font-family:'Arial';font-size:0.5cm;color:#dbdbdb;padding:0px;padding-left:10px;text-align:left">
-        <a class = "emphasis" href="grimaceHill.html">Smile For Me</a>
+        <a class = "emphasis" href="about.html">Smile For Me</a>
         <span style="color:#494949">///</span>
         <a href="credits.html">credits</a>
         <span style="color:#494949">///</span>
