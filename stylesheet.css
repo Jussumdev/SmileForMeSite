@@ -1,0 +1,139 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+  background-color: black;
+  background-repeat: repeat;
+  margin: 0px;
+}
+
+@font-face{
+  font-family: 'yugsly';
+  src: url('Fonts/yugsly-webfont.eot');
+  src: url('Fonts/yugsly-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/yugsly-webfont.woff') format('woff'),
+       url('Fonts/yugsly-webfont.ttf') format('truetype'),
+       url('Fonts/yugsly-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+  font-family: 'ADayinSeptember';
+  src: url('Fonts/ADayinSeptember.eot');
+  src: url('Fonts/ADayinSeptember.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/ADayinSeptember.woff') format('woff'),
+       url('Fonts/ADayinSeptember.ttf') format('truetype'),
+       url('Fonts/ADayinSeptember.svg#webfont') format('svg');
+}
+
+@font-face{
+  font-family: 'domotika';
+  src: url('Fonts/domotika-trial.light-webfont.eot');
+  src: url('Fonts/domotika-trial.light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/domotika-trial.light-webfont.woff') format('woff'),
+       url('Fonts/domotika-trial.light-webfont.ttf') format('truetype'),
+       url('Fonts/domotika-trial.light-webfont.svg#webfont') format('svg');
+}
+
+/* Textlink */
+a, a:visited { text-decoration: none; color:#dbdbdb }
+a:hover, a:focus, a:active { text-decoration: none; color:#6b6a6a; }
+
+a.emphasis, a.emphasis:visited { text-decoration: none; color:#e23650 }
+a.emphasis:hover, a.emphasis:focus, a.emphasis:active { text-decoration: none; color:#8e2535; }
+
+a.title, a.title:visited { text-decoration: none; color:#36ff00 }
+a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e590e; }
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+}
+
+.columnPrimary {
+    vertical-align: middle;
+    float: left;
+    width: 70%;
+}
+
+.columnSecondary {
+    vertical-align: middle;
+    float: left;
+    width: 30%;
+}
+
+.columnSmallW {
+    vertical-align: middle;
+    float: left;
+    width: 15%;
+}
+
+.columnLargeW {
+    vertical-align: middle;
+    float: left;
+    width: 70%;
+}
+
+.column {
+    vertical-align: middle;
+    float: left;
+}
+
+.leftW, .rightW {
+  width: 15%;
+}
+
+.middleW {
+  width: 70%
+}
+
+.columnThird {
+  vertical-align: middle;
+  float: left;
+  width: 33.33%;
+}
+
+.columnHalf {
+  vertical-align: middle;
+  float: left;
+  width: 50%;
+}
+
+.columnQuarter {
+  vertical-align: middle;
+  float: left;
+  width: 25%;
+}
+
+.row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.center-vid {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
