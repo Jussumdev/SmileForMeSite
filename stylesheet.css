@@ -149,8 +149,7 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
 
 @media all and (max-width:800px) //800px for tablets and phones.
 {
-    .columnThirdMobileStack, .columnHalfMobileStack, .columnFourthMobileStack, .columnPrimaryMobileStack, .columnSecondaryMobileStack
-    {
+    .columnThirdMobileStack, .columnHalfMobileStack, .columnFourthMobileStack, .columnPrimaryMobileStack, .columnSecondaryMobileStack {
         display: block;
         float: none;
         width: 100%;
