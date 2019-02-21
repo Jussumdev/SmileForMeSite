@@ -27,6 +27,15 @@ body {
 }
 
 @font-face{
+  font-family: 'honya';
+  src: url('Fonts/HonyaJi-Re.eot');
+  src: url('Fonts/HonyaJi-Re.eot?#iefix') format('embedded-opentype'),
+       url('Fonts/HonyaJi-Re.woff') format('woff'),
+       url('Fonts/HonyaJi-Re.ttf') format('truetype'),
+       url('Fonts/HonyaJi-Re.svg#webfont') format('svg');
+}
+
+@font-face{
   font-family: 'ADayinSeptember';
   src: url('Fonts/ADayinSeptember.eot');
   src: url('Fonts/ADayinSeptember.eot?#iefix') format('embedded-opentype'),
