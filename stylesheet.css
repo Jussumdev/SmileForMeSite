@@ -72,13 +72,13 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
   width: 96%;
 }
 
-.columnPrimary {
+.columnPrimary, .columnPrimaryMobileStack {
     vertical-align: middle;
     float: left;
     width: 70%;
 }
 
-.columnSecondary {
+.columnSecondary, .columnSecondaryMobileStack {
     vertical-align: middle;
     float: left;
     width: 30%;
@@ -149,10 +149,12 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
 
 @media all and (max-width:800px) //800px for tablets and phones.
 {
-    .columnThirdMobileStack, .columnHalfMobileStack, .columnFourthMobileStack
+    .columnThirdMobileStack, .columnHalfMobileStack, .columnFourthMobileStack,
+    .columnPrimaryMobileStack, .columnSecondaryMobileStack
     {
         display: block;
         float: none;
         width: 100%;
     }
+
 }
