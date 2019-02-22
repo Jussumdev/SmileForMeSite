@@ -163,7 +163,7 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
   /*pass*/
 }
 
-@media screen and (max-width: 1200px) and (orientation: portrait)
+@media screen and (max-width: 1200px)
 {
 
     .columnMobileStack
