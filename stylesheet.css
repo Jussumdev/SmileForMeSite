@@ -72,13 +72,13 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
   width: 96%;
 }
 
-.columnPrimary, .columnPrimaryMobileStack {
+.columnPrimary {
     vertical-align: middle;
     float: left;
     width: 70%;
 }
 
-.columnSecondary, .columnSecondaryMobileStack {
+.columnSecondary {
     vertical-align: middle;
     float: left;
     width: 30%;
@@ -109,13 +109,13 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
   width: 70%
 }
 
-.columnThird, .columnThirdMobileStack {
+.columnThird {
   vertical-align: middle;
   float: left;
   width: 33.33%;
 }
 
-.columnHalf, .columnHalfMobileStack {
+.columnHalf {
   vertical-align: middle;
   float: left;
   width: 50%;
@@ -147,14 +147,39 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
     clear: both;
 }
 
+.CenterLeftMobile {
+  text-align:center;
+}
+
+.RightLeftMobile {
+  text-align:right;
+}
+
+.LeftRightMobile {
+  text-align:left;
+}
+
+.columnMobileStack {
+  /*pass*/
+}
+
 @media all and (max-width: 800px)
 {
 
-    .columnThirdMobileStack, .columnHalfMobileStack, .columnFourthMobileStack, .columnPrimaryMobileStack, .columnSecondaryMobileStack
+    .columnMobileStack
     {
         display: block;
         float: none;
         width: 100%;
+    }
+
+    .CenterLeftMobile, .RightLeftMobile
+    {
+      text-align:left;
+    }
+
+    .LeftRightMobile {
+      text-align:right;
     }
 
 }
