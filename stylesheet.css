@@ -72,6 +72,12 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
   width: 96%;
 }
 
+.columnAuto {
+    vertical-align: middle;
+    float: left;
+    padding: 0px;
+}
+
 .columnPrimary {
     vertical-align: middle;
     float: left;
@@ -163,6 +169,9 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
   /*pass*/
 }
 
+.elementDividerText {
+  /*pass*/
+}
 
 @media all and (max-width: 1200px)
 {
@@ -181,6 +190,14 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
 
     .LeftRightMobile {
       text-align:right;
+    }
+
+
+    .elementDividerText span {
+      display: none;
+    }
+    .elementDividerText:after {
+      content: "";
     }
 
 }
