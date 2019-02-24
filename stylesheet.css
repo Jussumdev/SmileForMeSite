@@ -169,7 +169,20 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
   /*pass*/
 }
 
+.columnMobileHalf {
+  /*pass*/
+}
+
+.columnMobileRemove {
+  /*pass*/
+}
+
 .elementDividerText {
+  /*pass*/
+}
+
+
+.copyrightText:after {
   /*pass*/
 }
 
@@ -181,6 +194,18 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
         display: block;
         float: none;
         width: 100%;
+    }
+
+    .columnMobileHalf
+    {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    .columnMobileRemove {
+        display: none;
+        width: 0%;
     }
 
     .CenterLeftMobile, .RightLeftMobile
@@ -198,6 +223,11 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
     }
     .elementDividerText:after {
       content: "";
+    }
+
+
+    .copyrightText span {
+      display: none;
     }
 
 }
