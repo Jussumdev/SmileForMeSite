@@ -63,7 +63,21 @@ a.emphasis:hover, a.emphasis:focus, a.emphasis:active { text-decoration: none; c
 a.title, a.title:visited { text-decoration: none; color:#36ff00 }
 a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e590e; }
 
-
+/* Link screenshots in about page */
+.fill a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill a img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.fill a img:hover {
+    opacity: .5;
+}
 
 .center {
   display: block;
@@ -104,6 +118,7 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
 
 .column {
     vertical-align: middle;
+    min-height: 1px;
     float: left;
 }
 
@@ -117,20 +132,37 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
 
 .columnThird {
   vertical-align: middle;
+  min-height: 1px;
   float: left;
   width: 33.33%;
 }
 
 .columnHalf {
   vertical-align: middle;
+  min-height: 1px;
   float: left;
   width: 50%;
 }
 
-.columnQuarter, .columnQuarterMobileStack {
+.columnQuarter {
   vertical-align: middle;
+  min-height: 1px;
   float: left;
   width: 25%;
+}
+
+.columnSixth {
+  vertical-align: middle;
+  min-height: 1px;
+  float: left;
+  width: 16.6%;
+}
+
+.columnTwoThirds {
+  vertical-align: middle;
+  min-height: 1px;
+  float: left;
+  width: 66.6%;
 }
 
 .row {
