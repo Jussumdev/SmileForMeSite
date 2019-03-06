@@ -79,6 +79,10 @@ a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e5
     opacity: .5;
 }
 
+p {
+  margin: 0px;
+}
+
 .center {
   display: block;
   margin-left: auto;
