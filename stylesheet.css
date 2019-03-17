@@ -54,18 +54,8 @@ body {
 }
 
 /* Textlink */
-a, a:visited { text-decoration: none; color:#dbdbdb }
-a:hover, a:focus, a:active {text-decoration: none; color:#6b6a6a;}
-
-a img:hover {
-  opacity: 0.5;
-}
-
-a.emphasis, a.emphasis:visited { text-decoration: none; color:#e23650 }
-a.emphasis:hover, a.emphasis:focus, a.emphasis:active { text-decoration: none; color:#8e2535; }
-
-a.title, a.title:visited { text-decoration: none; color:#36ff00 }
-a.title:hover, a.title:focus, a.title:active { text-decoration: none; color:#1e590e; }
+a, a:visited { text-decoration: none; color:#dbdbdb; opacity: 1}
+a:hover, a:focus, a:active {text-decoration: none; color:#6b6a6a; opacity: 0.5}
 
 /* Link screenshots in about page */
 .fill a {
