@@ -142,6 +142,13 @@ p {
   width: 50%;
 }
 
+.columnFull {
+  vertical-align: middle;
+  min-height: 1px;
+  float: left;
+  width: 100%;
+}
+
 .columnQuarter {
   vertical-align: middle;
   min-height: 1px;
@@ -203,6 +210,10 @@ p {
   /*pass*/
 }
 
+.columnMobileThird {
+  /*pass*/
+}
+
 .columnMobileRemove {
   /*pass*/
 }
@@ -231,6 +242,12 @@ p {
         display: block;
         float: left;
         width: 50%;
+    }
+
+    .columnMobileThird {
+      display: block;
+      float: left;
+      width: 33%;
     }
 
     .columnMobileRemove {
